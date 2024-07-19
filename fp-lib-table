@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "koyomi_bl_test_driver")(type "KiCad")(uri "/home/treble/Desktop/koyomi-hdmi-lvds/lib/koyomi_bl_test_driver.pretty")(options "")(descr ""))
+)
