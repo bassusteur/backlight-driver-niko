@@ -655,6 +655,138 @@
 				)
 			)
 		)
+		(symbol "Device:Fuse_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse_Small"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_Small_0_1"
+				(rectangle
+					(start -1.27 0.508)
+					(end 1.27 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:L_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -1604,8 +1736,8 @@
 		(uuid "ff881f81-371a-429f-ab75-1ad31f01fc49")
 	)
 	(no_connect
-		(at 195.58 91.44)
-		(uuid "3c8e4bcb-894e-4f8e-a2db-5a0422f39169")
+		(at 132.08 116.84)
+		(uuid "2eaf368a-ed72-4fba-8e82-d9fafafe8b58")
 	)
 	(no_connect
 		(at 198.12 114.3)
@@ -1614,10 +1746,6 @@
 	(no_connect
 		(at 198.12 96.52)
 		(uuid "6793075b-20eb-410a-9e87-0ae64de5bef4")
-	)
-	(no_connect
-		(at 195.58 88.9)
-		(uuid "6e244641-2878-4d69-a430-0bb77912f900")
 	)
 	(no_connect
 		(at 198.12 99.06)
@@ -1746,6 +1874,16 @@
 			(type default)
 		)
 		(uuid "4e3f8b18-4919-43b7-82a2-618da279f4b1")
+	)
+	(wire
+		(pts
+			(xy 187.96 83.82) (xy 191.77 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "529b49f3-c85d-4ea0-9944-2cc1615dc49e")
 	)
 	(wire
 		(pts
@@ -1961,6 +2099,28 @@
 			)
 		)
 	)
+	(global_label "L_FAULT"
+		(shape input)
+		(at 195.58 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e0eeebd-4cd7-4909-9c67-40df2686c03d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.7499 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCD3"
 		(shape passive)
 		(at 198.12 104.14 180)
@@ -2001,6 +2161,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "L_PWM"
+		(shape input)
+		(at 176.53 120.65 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4cfbdb94-3def-4541-99cf-3dbc69071204")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 111.4963 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2111,6 +2293,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "L_PWM"
+		(shape input)
+		(at 195.58 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "782cab18-25f6-45ff-a4b2-28b48896d773")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0805 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2249,7 +2453,7 @@
 	)
 	(global_label "VAD"
 		(shape output)
-		(at 196.85 83.82 180)
+		(at 187.96 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2259,7 +2463,7 @@
 		)
 		(uuid "a8ac1195-122d-4fd6-b634-e9d0f38a8deb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 190.4176 83.82 0)
+			(at 181.5276 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2326,6 +2530,28 @@
 		(uuid "bd9f6872-df5d-4815-8f57-7f694eea0e55")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 103.8047 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "L_FAULT"
+		(shape input)
+		(at 182.88 123.19 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf0d901f-dc55-4f1a-8198-a824dee4ba48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 133.6743 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2484,7 +2710,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20K"
 			(at 109.474 118.11 90)
 			(effects
 				(font
@@ -2551,7 +2777,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "430K"
 			(at 80.264 105.41 90)
 			(effects
 				(font
@@ -2618,7 +2844,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20K"
 			(at 109.474 105.41 90)
 			(effects
 				(font
@@ -2750,7 +2976,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20K"
 			(at 80.264 118.11 90)
 			(effects
 				(font
@@ -2947,7 +3173,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20K"
 			(at 95.504 118.11 90)
 			(effects
 				(font
@@ -3175,6 +3401,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 182.88 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e194369-c4a1-40a3-8071-3a1e6c14f981")
+		(property "Reference" "#PWR019"
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 182.88 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93662f5f-5908-43a7-ae3c-11fc1894b517")
+		)
+		(instances
+			(project "backlight-driver-niko"
+				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 132.08 101.6 270)
 		(unit 1)
@@ -3299,6 +3590,73 @@
 			(project "backlight-driver-niko"
 				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 176.53 124.46 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6be5ec6d-132e-428b-9b7d-663ebaaa2da4")
+		(property "Reference" "R8"
+			(at 171.704 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20K"
+			(at 174.244 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 178.308 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 176.53 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "52e391b5-21c0-4f18-bee2-7794805ff81f")
+		)
+		(pin "1"
+			(uuid "e83df51a-690f-460d-be03-f3fc918773b6")
+		)
+		(instances
+			(project "backlight-driver-niko"
+				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3757,7 +4115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "1uF"
 			(at 115.824 81.28 0)
 			(effects
 				(font
@@ -3825,7 +4183,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "560K"
 			(at 95.504 105.41 90)
 			(effects
 				(font
@@ -4091,7 +4449,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7K"
+		(property "Value" "5.1K"
 			(at 162.56 104.394 90)
 			(effects
 				(font
@@ -4136,6 +4494,73 @@
 			(project "backlight-driver-niko"
 				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse_Small")
+		(at 194.31 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd1474dc-9364-4145-8bda-212c370e28c1")
+		(property "Reference" "F1"
+			(at 193.04 86.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BL_Fuse"
+			(at 194.31 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+			(at 194.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse, small symbol"
+			(at 194.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2d5a290-9a96-4a73-a2c6-9f077a544515")
+		)
+		(pin "1"
+			(uuid "bcc28285-97e2-4127-a1e2-4e2fd9aeb9d9")
+		)
+		(instances
+			(project ""
+				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -4530,6 +4955,139 @@
 			(project "backlight-driver-niko"
 				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 182.88 119.38 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d51b8206-6ddd-47aa-a77d-f946432f6e41")
+		(property "Reference" "R9"
+			(at 187.706 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20K"
+			(at 185.166 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 181.102 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 182.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "919a71bb-741d-48a5-a7f8-7c2aae58f55c")
+		)
+		(pin "1"
+			(uuid "74dd6df5-b92e-4d42-8fcd-b89e81b73370")
+		)
+		(instances
+			(project "backlight-driver-niko"
+				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d84325ae-eb64-460b-babf-0da789fdb4dd")
+		(property "Reference" "#PWR018"
+			(at 176.53 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 132.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edb75090-6bff-4186-9438-07bb76aecb37")
+		)
+		(instances
+			(project "backlight-driver-niko"
+				(path "/a4593297-b692-4345-bd04-d3689bbe27b9"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
